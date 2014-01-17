@@ -3,11 +3,11 @@ pexpwrap
 
 Wrapper for pexpect
 
-pexpect is a pure python module alternative to expect.
+pexpect is a pure python module alternative to expect (please see http://pexpect.sourceforge.net/pxssh.html)
 
 pyssh is a wrapper for this one, made by the same author; unfortunately there is not quite mature yet to be used.
 
-pexpwrap is using pexpect to make the life easier for some sysadmins and field engineers.
+pexpwrap is using pexpect attempting to make the life easier for some sysadmins and field engineers.
 
 It is based on the assumption that you need to run alot of [configuration] commands on a device.
 

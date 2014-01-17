@@ -11,6 +11,20 @@ pexpwrap is using pexpect to make the life easier for some sysadmins and field e
 
 It is based on the assumption that you need to run alot of [configuration] commands on a device.
 
+Parameters in .ini file
+-----------------------
+HOST - ip or hostname of the device
+USER - user used
+PASS - password for the user above
+PROMPT - prompt is very important, because pexpect will expect that char sequence to run the next command.
+If no prompt is given, it will default to the most common linux prompt: $
+
+Note: At this time, the script does not have a way to handle a new ssh key dialog. Please connect from your computer with a normal ssh first. You only need to respond "yes" to the new ssh dialog.
+
+
+Usage and examples
+------------------
+
 Let's say you need to replace an old Brocade FC switch with a new one; licenses are different, maybe the IP is different and you just can't afford to stay in site to replicate the config in the web interface.
 
 You can just ask the customer to send you by e-mail the old config, downloaded from the switch. Using grep, sed and whatever you like, you create a file that contains the text-mode commands needed for the new switch to work.

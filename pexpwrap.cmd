@@ -1,0 +1,2 @@
+vol status
+aggr status
